@@ -40,49 +40,49 @@ body{
 
 header {
     background-color: var(--header-bg);
-}
 
-header ul li a{
-    color: var(--ul-a);
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
-    letter-spacing: 0.5px; 
+    & ul li a {
+        color: var(--ul-a);
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
+        letter-spacing: 0.5px; 
+    
+        &:hover {
+            color: var(--ul-a-hover);
+        }
+    }
 
-    &:hover {
-        color: var(--ul-a-hover);
+    & li label {
+        position: relative;
+        background-color: var(--ul-label);
+        border-radius: 50px;
+        cursor: pointer;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        color: var(--ul-label-icon);
+    
+        & .ball {
+            position: absolute;
+            background-color: var(--label-ball);
+            padding: 0.2rem;
+            width: 2rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            top: 1.5px;
+            left: 1.7px;
+            transform: scale(1px);
+            transition: 0.6s;
+        }
+    }
+
+    & li label.dark .ball {
+        left: 2rem;
     }
 }
 
 .checkbox {
     opacity: 0;
     position: absolute;
-}
-
-header li label {
-    position: relative;
-    background-color: var(--ul-label);
-    border-radius: 50px;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    color: var(--ul-label-icon);
-
-    & .ball {
-        position: absolute;
-        background-color: var(--label-ball);
-        padding: 0.2rem;
-        width: 2rem;
-        height: 1.8rem;
-        border-radius: 50%;
-        top: 1.5px;
-        left: 1.7px;
-        transform: scale(1px);
-        transition: 0.6s;
-    }
-}
-
-header li label.dark .ball {
-    left: 2rem;
 }
 
 .custom-toggler.navbar-toggler {
@@ -110,7 +110,7 @@ header li label.dark .ball {
     filter: drop-shadow(5px 2px 9px #000000);
 }
 
-#home {
+#begin {
     & h1 {
         text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
         & span {
@@ -131,4 +131,24 @@ header li label.dark .ball {
 
 #button-cont {
     padding: 2rem 0rem;
+}
+
+#sobre {
+    background-color: var(--header-bg);
+    
+    & h1 {
+        color: var(--color-text-dif);
+        text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
+    }
+
+    & p {
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+        font-size: 1.1rem;
+    }
+
+    & img {
+        margin-left: 2.3rem;
+        width: 16rem;
+    }
 }

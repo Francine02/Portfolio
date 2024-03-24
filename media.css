@@ -1,11 +1,247 @@
  /* Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
  @media (max-width: 575.98px) { 
+    header {
+        padding: 0rem 1rem 0rem 0.1rem;
+        & li label {
+            margin-left: -1.3rem;
+        }
+
+        & ul li a {
+            font-size: 1rem;
+        }
+    }
+    
+    #begin {
+        margin-top: -1rem;
+        text-align: center;
+        
+        & h1 {
+            margin-top: -3.3rem;
+            font-size: 1.5rem;
+            & span {
+                font-size: 1.9rem;
+            }
+        }
+        & p {
+            font-size: 0.9rem;
+        }
+
+        & #bg-img, #francine {
+            width: 8rem;
+        }
+    }
+    
+    #linkedin, #github, #cv {
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+    
+    #button-cont {
+        padding: 0.3rem 0.1rem 0.9rem 0.2rem;
+        margin-bottom: -4rem;
+    }
+    
+    #sobre {
+        text-align: center;
+        
+        & h1 {
+            margin-top: -2rem;
+            font-size:1.5rem;
+            margin-bottom: -0.5rem;
+        }
+    
+        & p {
+            font-size: 0.9rem;
+        }
+    
+        & img {
+            display: none;
+        }
+    }
   }
  
  /* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
  @media (min-width: 576px) and (max-width: 767.98px) { 
+    header {
+        padding: 0rem 2.2rem 0rem 0.1rem;
+        & li label {
+            margin-left: -1.3rem;
+        }
+
+        & ul li a {
+            font-size: 1.2rem;
+        }
+    }
+    
+    #begin {
+        margin: -0.5rem -1rem -4rem -1rem;
+        
+        & h1 {
+            margin-left: -2rem;
+            margin-top: -3rem;
+            font-size: 1.7rem;
+            & span {
+                font-size: 2rem;
+            }
+        }
+        & p {
+            margin-left: -2rem;
+            font-size: 1.05rem;
+        }
+
+        & #bg-img, #francine {
+            width: 10rem;
+        }
+    }
+    
+    #linkedin, #github, #cv {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+    
+    #button-cont {
+        margin-left: -1.4rem;
+        padding: 0.3rem 0.1rem 0.7rem 0.2rem;
+    }
+    
+    #sobre {
+        margin-left: -1rem;
+        & h1 {
+            margin-top: -2rem;
+            font-size:1.6rem;
+            margin-bottom: -0.5rem;
+        }
+    
+        & p {
+            font-size: 1rem;
+        }
+    
+        & img {
+           width: 8rem;
+           margin-left: -3rem;
+        }
+    }
  }
  
  /* Dispositivos médios (tablets com 768px ou mais)*/
  @media (min-width: 768px) and (max-width: 991.98px) {
+    header {
+        padding: 0rem 3rem 0rem 0.5rem;
+        & li label {
+            margin-left: -1.3rem;
+        }
+
+        & ul li a {
+            font-size: 1.3rem;
+        }
+    }
+    
+    #begin {
+        margin: -0.1rem -1rem -3rem -1rem;
+        
+        & h1 {
+            margin-left: -2rem;
+            margin-top: -0.7rem;
+            font-size: 2rem;
+            & span {
+                font-size: 3rem;
+            }
+        }
+        & p {
+            margin-left: -2rem;
+            font-size: 1.3rem;
+        }
+
+        & #bg-img, #francine {
+            width: 16rem;
+        }
+    }
+    
+    #linkedin, #github, #cv {
+        padding: 0.8rem;
+        font-size: 1.5rem;
+    }
+    
+    #button-cont {
+        margin-left: -2rem;
+        padding: 0.3rem 2rem 0.8rem 0rem;
+    }
+    
+    #sobre {
+        margin-left: -1rem;
+        & h1 {
+            margin-top: -2rem;
+            font-size:1.9rem;
+            margin-bottom: -0.1rem;
+        }
+    
+        & p {
+            font-size: 1.3rem;
+        }
+    
+        & img {
+            padding-top: 2rem;
+            width: 10rem;
+            margin-left: -1.8rem;
+        }
+    }
   }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+        padding: 0rem 4.7rem 1rem -1rem;
+
+        & ul li a {
+            font-size: 1.2rem;
+            margin-right: -1rem;
+        }
+    }
+    
+    #begin {
+        margin: 1rem -2rem -2rem -4.5rem;
+        
+        & h1 {
+            margin-left: -1.5rem;
+            font-size: 2.5rem;
+            & span {
+                font-size: 3.6rem;
+            }
+        }
+        & p {
+            margin-left: -1.5rem;
+            font-size: 1.4rem;
+        }
+
+        & #bg-img, #francine {
+            width: 19rem;
+        }
+    }
+    
+    #linkedin, #github, #cv {
+        padding: 1.4rem;
+        font-size: 1.6rem;
+    }
+    
+    #button-cont {
+        margin-left: -1.3rem;
+        padding: 1rem 1rem 1rem 0rem;
+    }
+    
+    #sobre {
+        margin-left: -4.5rem;
+        & h1 {
+            margin-top: -1.5rem;
+            font-size: 2.8rem;
+        }
+    
+        & p {
+            font-size: 1.45rem;
+        }
+    
+        & img {
+            padding-top: 5rem;
+            width: 14rem;
+            margin-left: -1.7rem;
+        }
+    }
+}

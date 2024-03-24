@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./media.css">
     <script src="./script.js" defer></script>
-    <script src="./language.js" defer></script>
     <title>Portofólio - Francine Cruz</title>
   </head>
   <body>
-    <header class="fixed-top px-md-5 ">
+    <header class="fixed-top px-md-5">
         <nav class="navbar navbar-expand-lg">
             <a href="#home" class="navbar-brand mt-2">
               <img src="./img/logo-light.png" alt="logo" style="width: 5rem;" id="img">
@@ -29,20 +28,17 @@
             <div class="collapse navbar-collapse justify-content-end" id="nav-principal">
               <ul class="navbar-nav" id="nav">
                 <li class="nav-item pr-4">
-                  <a href="#home" class="nav-link" id="home">Home</a>
+                  <a href="#begin" class="nav-link">Início</a>
                 </li>
                 <li class="nav-item pr-4">
-                  <a href="#sobre" class="nav-link" id="about"></a>
+                  <a href="#sobre" class="nav-link" >Sobre</a>
                 </li>
                 <li class="nav-item pr-4">
-                  <a href="" class="nav-link" id="skills"></a>
+                  <a href="hab" class="nav-link">Habilidades</a>
                 </li>
                 <li class="nav-item pr-4">
-                  <a href="" class="nav-link" id="proj"></a>
+                  <a href="projetos" class="nav-link">Projetos</a>
                 </li>
-
-                <li class="nav-item dropdown">
-                </li><!--End of dropdown-->
 
                 <li class="nav-item mt-2 ml-4">
                   <label for="dark-light" class="label">
@@ -59,16 +55,17 @@
         </nav>
     </header>
 
-    <section id="home">
+    <section id="begin">
         <div class="container-fluid mb-5">
-            <div class="row px-md-5">
+            <div class="row px-lg-5">
                 <div class="col-sm-6">
                     <img src="./img/bg-light.png" alt=" ciculo-verde" id="bg-img" class="mt-3">
                     <img src="./img/img-francine.png" alt="Imagem-francine" id="francine" class="mt-1">
                 </div>
                 <div class="col-sm-6 mt-5 pt-4">
-                  <div id="h1">
-                  </div>
+
+                  <h1 class="display-5">Olá, meu nome é <br><span>Francine Cruz</span></h1>
+                  <p>--Desenvolvedora Front-End.</p>
 
                   <div id="button-cont">
                     <a href="https://github.com/Francine02" target="_blank"> <button class="btn btn-outline-secondary mr-2"><i class="bi bi-github" id="github"></i></button></a>
@@ -80,14 +77,15 @@
         </div>
     </section>
 
-    <section id="sobre">
-      <div class="container-fluid mt-3">
+    <section id="sobre" class="mt-5">
+      <div class="container-fluid">
           <div class="row px-lg-5">
-              <div class="col-sm-8">
-
+              <div class="col-sm-8 mt-4 pr-4" id="about-me">
+                <h1>Sobre Mim</h1>
+                <p class="pt-3">Olá! Sou a Francine, uma estudante de Engenharia de Software com paixão pelo desenvolvimento e pela criação de experiências digitais envolventes. Com habilidades em JavaScript, Bootstrap, React.js, TypeScript, Python, o básico sobre Java e C#, estou constantemente explorando maneiras de me aperfeiçoar e no momento meu foco é o Front-End.</p> <!--Aqui havera mudanças posteriormente-->
               </div>
-              <div class="col-sm-4">
-
+              <div class="col-sm-4 pl-5 mt-4">
+                <img src="./img/about-img.png" alt="3d-francine">
               </div>
           </div>
       </div>
