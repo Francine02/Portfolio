@@ -201,11 +201,13 @@ header {
     & #card {
         background-color: var(--card-color);
         text-align: center;
+        margin: auto;
+        display: block;
+        justify-content: center;
 
        & img {
         width: 14rem;
         height: 13rem;
-        margin-left: 2.5rem;
        }
 
        & #github, #web {
