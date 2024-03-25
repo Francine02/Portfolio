@@ -21,6 +21,9 @@ body{
     --label-ball: #f0cbd7;
     --logo-img: url{"./img/logo-light.png"};
     --color-text-dif: #7BA697;
+    --hab-g-p: #D34B78;
+    --color-icon: Invert(0%);
+    --card-color: #f9dfe7;
 }
 
 .dark:root {
@@ -36,6 +39,9 @@ body{
     --label-ball: #f0cbd7;
     --logo-img: url{"./img/logo-dark.png"};
     --color-text-dif: #D34B78;
+    --hab-g-p: #548373;
+    --color-icon: Invert(100%);
+    --card-color: #343434;
 }
 
 header {
@@ -111,6 +117,7 @@ header {
 }
 
 #begin {
+    margin-bottom: 10rem;
     & h1 {
         text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
         & span {
@@ -134,6 +141,7 @@ header {
 }
 
 #sobre {
+    margin-bottom: 10rem;
     background-color: var(--header-bg);
     
     & h1 {
@@ -143,12 +151,71 @@ header {
 
     & p {
         font-weight: 500;
-        letter-spacing: 0.05rem;
+        letter-spacing: 0.03rem;
         font-size: 1.1rem;
+
+        & span {
+            color: var(--color-text-dif);
+            text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
+        }
     }
 
     & img {
-        margin-left: 2.3rem;
+        margin-left: 2.4rem;
         width: 16rem;
+    }
+}
+
+#habilidades {
+    margin-bottom: 10rem;
+    background-color: var(--header-bg);
+    text-align: center;
+
+    & h1 {
+        color: var(--color-text-dif);
+        text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
+    }
+
+    & #icon {
+        background-color: var(--hab-g-p);
+        width: 6rem;
+        height: 5.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    & img {
+        filter: var(--color-icon);
+        width: 3rem;
+    }
+}
+
+#projetos {
+    background-color: var(--header-bg);
+
+    & h1 {
+        text-align: center;
+        color: var(--color-text-dif);
+        text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
+    }
+
+    & #card {
+        background-color: var(--card-color);
+        text-align: center;
+
+       & img {
+        width: 14rem;
+        height: 13rem;
+        margin-left: 2.5rem;
+       }
+
+       & #github, #web {
+        color: var(--color-text);
+       }
+
+       & #web {
+        width: 7rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+       }
     }
 }
