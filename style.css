@@ -141,7 +141,7 @@ header {
 }
 
 #sobre {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     background-color: var(--header-bg);
     
     & h1 {
@@ -167,7 +167,7 @@ header {
 }
 
 #habilidades {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     background-color: var(--header-bg);
     text-align: center;
 
@@ -191,8 +191,9 @@ header {
 
 #projetos {
     background-color: var(--header-bg);
+    margin-bottom: 15rem;
 
-    & h1 {
+    & h1, h5 {
         text-align: center;
         color: var(--color-text-dif);
         text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
@@ -205,19 +206,47 @@ header {
         display: block;
         justify-content: center;
 
-       & img {
-        width: 14rem;
-        height: 13rem;
-       }
+        & img {
+            width: 14rem;
+            height: 13rem;
+        }
 
-       & #github, #web {
+        & #github, #web {
+            color: var(--color-text);
+        }
+
+        & #web {
+            width: 7rem;
+            height: 3rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+}
+
+#contatos {
+    background-color: var(--header-bg);
+    text-align: center;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    
+    & h1 {
+        color: var(--color-text-dif);
+        text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
+    }
+
+    & i {
+        font-size: 3rem;
         color: var(--color-text);
-       }
+    }
 
-       & #web {
-        width: 7rem;
+    & p {
         font-size: 1.2rem;
         font-weight: 600;
-       }
+    }
+
+    & .col-md i:hover {
+        color: var(--color-text-dif);
     }
 }

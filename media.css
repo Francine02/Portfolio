@@ -12,8 +12,8 @@
     }
     
     #begin {
-        margin-bottom: 4rem;
-        margin-top: -1rem;
+        margin-bottom: 10rem;
+        margin-top: 9rem;
         text-align: center;
         
         & h1 {
@@ -43,7 +43,7 @@
     }
     
     #sobre {
-        margin-bottom: 2rem;
+        margin-bottom: 10rem;
         & h1 {
             padding-top: 1rem;
             margin-top: -2rem;
@@ -63,7 +63,7 @@
     }
 
     #habilidades {
-        margin-bottom: 2rem;
+        margin-bottom: 10rem;
     
         & h1 {
             font-size: 1.5rem;
@@ -87,6 +87,7 @@
         }
     }
     #projetos {
+        margin-bottom: 10rem;
         & h1 {
             font-size:1.5rem;
             margin-bottom: -0.5rem;
@@ -100,14 +101,30 @@
            }
     
            & #web {
-            width: 3.7rem;
+            width: 3.4rem;
+            height: 2.7rem;
             font-size: 1rem;
-            padding-top: 1rem;
            }
 
            & #github {
-            font-size: 2.8rem;
+            padding: 0.3rem;
+            font-size: 1.2rem;
            }
+
+        }
+    }
+
+    #contatos {     
+        & h1 {
+            font-size:1.5rem;
+        }
+    
+        & i {
+            font-size: 2rem;
+        }
+    
+        & p {
+            font-size: 1rem;
         }
     }
 }
@@ -127,7 +144,8 @@
     }
     
     #begin {
-        margin: -0.5rem -1rem -4rem -1rem;
+        margin: 9rem -1rem -4rem -1rem;
+        margin-bottom:10rem;
         
         & h1 {
             margin-left: -2rem;
@@ -159,7 +177,7 @@
     
     #sobre {
         margin-left: -1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 11rem;
         & h1 {
             padding-top: 1rem;
             margin-top: -2rem;
@@ -178,7 +196,7 @@
         }
     }
     #habilidades {
-        margin-bottom: 3rem;
+        margin-bottom: 11rem;
     
         & h1 {
             font-size: 1.7rem;
@@ -203,6 +221,7 @@
     }
 
     #projetos {
+        margin-bottom: 11rem;
         & h1 {
             font-size:1.7rem;
             margin-bottom: -0.2rem;
@@ -217,15 +236,30 @@
     
            & #web {
             width: 5rem;
+            height: 4.6rem;
             font-size: 1.5rem;
             padding-top: 1rem;
            }
 
            & #github {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
            }
         }
+
+    #contatos {     
+        & h1 {
+            font-size:1.7rem;
+        }
+    
+        & i {
+            font-size: 2.2rem;
+        }
+    
+        & p {
+            font-size: 1rem;
+        }
     }
+}
 
  }
  
@@ -243,7 +277,8 @@
     }
     
     #begin {
-        margin: -0.1rem -3rem -3rem -1rem;
+        margin: 8rem -4rem -2rem -1rem;
+        margin-bottom: 13rem;
         
         & h1 {
             margin-left: -2rem;
@@ -275,7 +310,7 @@
     
     #sobre {
         margin-left: -1rem;
-        margin-bottom: 4rem;
+        margin-bottom: 13rem;
         & h1 {
             padding-top: 2rem;
             margin-top: -2rem;
@@ -295,7 +330,7 @@
     }
 
     #habilidades {
-        margin-bottom: 4rem;
+        margin-bottom: 13rem;
     
         & h1 {
             font-size: 2rem;
@@ -319,6 +354,7 @@
         }
     }
     #projetos {
+        margin-bottom: 13rem;
         & h1 {
             font-size:2rem;
         }
@@ -332,13 +368,27 @@
     
            & #web {
             width: 7rem;
+            height: 6rem;
             font-size: 1.9rem;
-            padding-top: 1rem;
            }
 
            & #github {
-            font-size: 3.6rem;
+            font-size: 3.4rem;
            }
+        }
+    }
+
+    #contatos {     
+        & h1 {
+            font-size:2rem;
+        }
+    
+        & i {
+            font-size: 2.4rem;
+        }
+    
+        & p {
+            font-size: 1rem;
         }
     }
   }
@@ -355,6 +405,7 @@
     
     #begin {
         margin: 1rem -2rem -2rem -4.5rem;
+        margin-bottom: 15rem;
         
         & h1 {
             margin-left: -1.5rem;
@@ -385,7 +436,7 @@
     
     #sobre {
         margin-left: -4.5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 15rem;
         & h1 {
             margin-top: -1.5rem;
             font-size: 2.5rem;
@@ -403,7 +454,7 @@
     }
 
     #habilidades {
-        margin-bottom: 5rem;
+        margin-bottom: 15rem;
     
         & h1 {
             font-size: 2.5em;
@@ -428,6 +479,7 @@
     }
 
     #projetos {
+        margin-bottom: 15rem;
         & h1 {
             font-size:2.5rem;
         }
@@ -441,13 +493,27 @@
     
            & #web {
             width: 8rem;
+            height: 7rem;
             font-size: 1.9rem;
-            padding-top: 1rem;
            }
 
            & #github {
-            font-size: 4rem;
+            font-size: 4.1rem;
            }
+        }
+    }
+
+    #contatos {     
+        & h1 {
+            font-size:2.5rem;
+        }
+    
+        & i {
+            font-size: 2.6rem;
+        }
+    
+        & p {
+            font-size: 1.2rem;
         }
     }
 }
