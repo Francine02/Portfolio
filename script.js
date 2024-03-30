@@ -18,4 +18,4 @@ darkLight.addEventListener("click", () => {
         bgImg.src = "./img/bg-light.png"
         logoChange = 0;
     }
-})
+}) //Script só sobre o modo escuro/claro

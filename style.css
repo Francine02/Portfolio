@@ -21,9 +21,10 @@ body{
     --label-ball: #f0cbd7;
     --logo-img: url{"./img/logo-light.png"};
     --color-text-dif: #7BA697;
-    --hab-g-p: #D34B78;
+    --hab-g-p: #ffd81384;
     --color-icon: Invert(0%);
     --card-color: #f9dfe7;
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .dark:root {
@@ -39,9 +40,14 @@ body{
     --label-ball: #f0cbd7;
     --logo-img: url{"./img/logo-dark.png"};
     --color-text-dif: #D34B78;
-    --hab-g-p: #548373;
+    --hab-g-p: #070602ec;
     --color-icon: Invert(100%);
     --card-color: #343434;
+    --box-shadow: rgba(255, 255, 255, 0) 0px 50px 100px -20px, rgba(254, 254, 254, 0.119) 0px 30px 60px -30px, rgba(254, 254, 254, 0.256) 0px -2px 6px 0px inset;
+}
+
+#sobre, #habilidades, #projetos {
+    border-radius: 40px;
 }
 
 header {
@@ -107,13 +113,15 @@ header {
 
 #bg-img {
     position: absolute;
-    width: 21rem;
+    width: 21.5rem;
     filter: drop-shadow(3px 9px 9px #000000);
+    border-radius: 50px;
 }
 
 #francine{
-    width: 21rem;
+    width: 21.5rem;
     filter: drop-shadow(5px 2px 9px #000000);
+    border-radius: 50px;
 }
 
 #begin {
@@ -143,6 +151,7 @@ header {
 #sobre {
     margin-bottom: 15rem;
     background-color: var(--header-bg);
+
     
     & h1 {
         color: var(--color-text-dif);
@@ -158,11 +167,6 @@ header {
             color: var(--color-text-dif);
             text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
         }
-    }
-
-    & img {
-        margin-left: 2.4rem;
-        width: 16rem;
     }
 }
 
@@ -180,7 +184,8 @@ header {
         background-color: var(--hab-g-p);
         width: 6rem;
         height: 5.5rem;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        box-shadow: var(--box-shadow);
+
     }
 
     & img {
@@ -205,6 +210,7 @@ header {
         margin: auto;
         display: block;
         justify-content: center;
+        box-shadow: var(--body-bg) 0px 0px 0px 2px inset, var(--header-bg) 10px -10px 0px -3px, #D34B78 10px -10px, var(--header-bg) 20px -20px 0px -3px, #ffd913 20px -20px, var(--header-bg) 30px -30px 0px -3px, #94ccb9 30px -30px;
 
         & img {
             width: 14rem;
@@ -227,10 +233,10 @@ header {
 #contatos {
     background-color: var(--header-bg);
     text-align: center;
-    margin: auto;
-    display: block;
-    justify-content: center;
-    
+    border-radius: 40px;
+    border-top: 6px dashed #94ccb9;
+    color: var(--color-text);
+
     & h1 {
         color: var(--color-text-dif);
         text-shadow: .8px .7px 0.9px rgba(1, 1, 1, 2.5);
